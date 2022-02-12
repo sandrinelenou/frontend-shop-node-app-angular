@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Cart } from 'src/app/models/cart/cart';
 
 @Component({
   selector: 'app-header',
@@ -6,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  /*cart: Cart[] = [];
+  cartData;
+  categories: Category[];
+  categorySub: Subscription;*/
+  isAuth = false;
   constructor() { }
+  logout(){}
 
   ngOnInit(): void {
   }
